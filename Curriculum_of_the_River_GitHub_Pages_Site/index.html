@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Curriculum of the River | A Living Classical Trivium in Mathematics</title>
+  <meta name="description" content="A 300-day classical mathematics curriculum across Grades 6, 7, and 8, presented in trade-authentic 17x11 panoramic broadsheets grounded in craftsmanship, physical metrology, and Euclidean invariance.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            river: {
+              900: '#0f233d',
+              800: '#1a365d',
+              700: '#234e82',
+              600: '#2b6cb0',
+              500: '#3182ce',
+              100: '#ebf8ff',
+              50:  '#f7fafc',
+            },
+            timber: {
+              700: '#7b341e',
+              600: '#9c4221',
+              500: '#c05621',
+              100: '#feebc8',
+            },
+            slate: {
+              850: '#1e293b',
+              900: '#0f172a',
+            }
+          },
+          fontFamily: {
+            serif: ['"EB Garamond"', 'Georgia', 'serif'],
+            display: ['"Cinzel"', '"EB Garamond"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'EB Garamond', Georgia, serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .folio-border {
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    .technical-grid {
+      background-size: 20px 20px;
+      background-image: linear-gradient(to right, rgba(203, 213, 225, 0.25) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(203, 213, 225, 0.25) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="technical-grid antialiased text-slate-800">
+
+  <!-- TOP STATUS BANNER -->
+  <header class="bg-river-900 text-slate-200 border-b border-river-700 py-2.5 px-4 text-xs font-mono tracking-wider uppercase">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Homestead Metrology · Olympia, WA</span>
+        <span class="text-slate-500">|</span>
+        <span>A Living Classical Trivium</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-300">
+        <span>300 Broadsheet Plates</span>
+        <span class="text-slate-500">•</span>
+        <span>100% Standards Decoupled</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVIGATION -->
+  <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+      <div class="flex flex-col">
+        <a href="#top" class="font-display font-bold text-xl sm:text-2xl text-river-900 tracking-wider">
+          The Curriculum of the River
+        </a>
+        <span class="text-xs uppercase tracking-widest text-river-600 font-mono">
+          Mathematics Invariance & Spatial Architecture
+        </span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8 text-base font-medium">
+        <a href="#philosophy" class="text-slate-600 hover:text-river-800 transition">Philosophy</a>
+        <a href="#showcase" class="text-slate-600 hover:text-river-800 transition">Sample Decads</a>
+        <a href="#roadmap" class="text-slate-600 hover:text-river-800 transition">30-Decad Scope</a>
+        <a href="#request-access" class="bg-river-800 hover:bg-river-900 text-white px-4 py-2 rounded text-sm font-sans tracking-wide transition shadow">
+          Request Full Access
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="top" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-4xl mx-auto">
+      <p class="font-mono text-xs uppercase tracking-widest text-timber-600 font-semibold mb-3">
+        Master Broadsheets · 17" × 11" Architectural Folio Standard
+      </p>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-river-900 leading-tight mb-6">
+        Mathematics as a Living Classical Art.
+      </h1>
+      <p class="text-xl sm:text-2xl text-slate-700 leading-relaxed font-serif italic mb-8">
+        Three years. Thirty decads. Three hundred single-plate broadsheets.<br class="hidden sm:inline">
+        Moving rigorously from tactile sensory craft to eternal algebraic invariance.
+      </p>
+      
+      <div class="flex flex-wrap justify-center gap-4 text-sm font-sans">
+        <a href="#showcase" class="bg-river-800 hover:bg-river-900 text-white px-6 py-3 rounded shadow-md transition font-medium">
+          Explore Sample Decads (PDF)
+        </a>
+        <a href="#request-access" class="bg-white hover:bg-slate-50 text-river-900 border border-slate-300 px-6 py-3 rounded shadow-sm transition font-medium">
+          Request Full 100-Day Portfolios
+        </a>
+      </div>
+    </div>
+
+    <!-- 3-PILLAR SUMMARY STRIP -->
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded border border-slate-200 shadow-sm">
+        <div class="text-xs font-mono uppercase tracking-widest text-river-600 mb-1">Architecture</div>
+        <h3 class="font-display font-bold text-lg text-river-900 mb-2">17" × 11" Single-Plate Folio</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Zero visual clutter or artificial pagination. Every daily lesson is encapsulated upon an expansive landscape broadsheet featuring panoramic vector demonstrations, five problem tiers, and a historical codex.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded border border-slate-200 shadow-sm">
+        <div class="text-xs font-mono uppercase tracking-widest text-timber-600 mb-1">Pedagogy</div>
+        <h3 class="font-display font-bold text-lg text-river-900 mb-2">Grounded Abstraction</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Never introducing an abstract symbol without its physical referent. Lessons progress systematically from sensory measurement through disciplinary terminology and structural bridges to invariant mathematical law.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded border border-slate-200 shadow-sm">
+        <div class="text-xs font-mono uppercase tracking-widest text-emerald-700 mb-1">Authenticity</div>
+        <h3 class="font-display font-bold text-lg text-river-900 mb-2">Homestead & Field Metrology</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Rooted in Puget Sound timber framing, aerospace stoichiometry, marine engineering, hydraulic conduits, and classical geometry—honoring Euclid, Ahmes, Oresme, and Archimedes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY: THE FOUR-STAGE GROUNDED ABSTRACTION -->
+  <section id="philosophy" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="font-mono text-xs uppercase tracking-widest text-river-600 font-semibold mb-2">Epistemological Method</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-river-900">The Four-Stage Grounded Abstraction</h2>
+        <p class="text-slate-600 mt-3 text-lg font-serif">
+          How authentic mathematical understanding unfolds upon every broadsheet plate:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="p-5 rounded bg-slate-50 border border-slate-200 relative">
+          <div class="w-8 h-8 rounded-full bg-river-800 text-white flex items-center justify-center font-mono text-sm font-bold mb-3">1</div>
+          <h4 class="font-display font-bold text-river-900 mb-1">The Sensory Referent</h4>
+          <p class="text-xs font-mono text-river-600 uppercase mb-2">Intuitive & Physical</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Directly observed physical phenomena—reservoir inflow, balance beams, gear trains, laser transit benchmarks, or timber blocking.
+          </p>
+        </div>
+
+        <div class="p-5 rounded bg-slate-50 border border-slate-200 relative">
+          <div class="w-8 h-8 rounded-full bg-river-700 text-white flex items-center justify-center font-mono text-sm font-bold mb-3">2</div>
+          <h4 class="font-display font-bold text-river-900 mb-1">The Disciplinary Name</h4>
+          <p class="text-xs font-mono text-river-600 uppercase mb-2">Formal Precision</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Bestowing exact classical mathematical vocabulary: <em>Additive Inverse</em>, <em>Rate Quotient</em>, <em>Vertical Intercept</em>, or <em>Extreme-Mean Proportion</em>.
+          </p>
+        </div>
+
+        <div class="p-5 rounded bg-slate-50 border border-slate-200 relative">
+          <div class="w-8 h-8 rounded-full bg-river-600 text-white flex items-center justify-center font-mono text-sm font-bold mb-3">3</div>
+          <h4 class="font-display font-bold text-river-900 mb-1">The Affixing Bridge</h4>
+          <p class="text-xs font-mono text-river-600 uppercase mb-2">Algebraic Tethering</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Reversible dual-pan equilibrium checks and coordinate lattices proving that operations can be inverted and undone without loss of truth.
+          </p>
+        </div>
+
+        <div class="p-5 rounded bg-slate-50 border border-slate-200 relative">
+          <div class="w-8 h-8 rounded-full bg-timber-600 text-white flex items-center justify-center font-mono text-sm font-bold mb-3">4</div>
+          <h4 class="font-display font-bold text-river-900 mb-1">The Abstract Invariant</h4>
+          <p class="text-xs font-mono text-timber-600 uppercase mb-2">Universal Theorem</p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            The generalized law ($y = mx + b$, $a/b \div c/d = ad/bc$, $a^2 + b^2 = c^2$) liberated from any single context, universally true in all spaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE FOLIOS: GRADES 6, 7, AND 8 -->
+  <section id="showcase" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <p class="font-mono text-xs uppercase tracking-widest text-river-600 font-semibold mb-2">Curriculum Samples</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-river-900">Explore a Complete Decad from Each Grade</h2>
+      <p class="text-slate-600 mt-3 text-lg font-serif">
+        Each sample contains an entire 10-day decad (10 complete 17" × 11" master broadsheets). Click to inspect plates in high resolution or download the complete PDF folios.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- GRADE 6 CARD -->
+      <div class="bg-white rounded-lg border border-slate-300 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+        <div class="bg-river-900 text-white p-4 border-b border-river-700 flex justify-between items-center">
+          <div>
+            <span class="text-xs font-mono tracking-widest uppercase text-sky-300">Grade 6 · Decad I</span>
+            <h3 class="font-display text-lg font-bold">Fraction Division & Reciprocity</h3>
+          </div>
+          <span class="text-xs font-mono bg-river-800 px-2.5 py-1 rounded text-slate-200 border border-river-600">Days 1–10</span>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <!-- Plate Thumbnail -->
+            <div class="relative group cursor-pointer mb-5 overflow-hidden rounded border border-slate-200" onclick="openModal('grade6')">
+              <img src="previews/grade_6_plate1-01.webp" alt="Grade 6 Plate 1" class="w-full h-48 object-cover object-top group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-river-900/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                <span class="bg-white text-river-900 text-xs font-mono px-3 py-1.5 rounded uppercase tracking-wider font-semibold shadow">
+                  Inspect Plate 1 & 2
+                </span>
+              </div>
+            </div>
+
+            <div class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-2">Core Disciplinary Highlights</div>
+            <ul class="text-sm text-slate-600 space-y-1.5 mb-6 font-serif">
+              <li>• Measurement division & rectangular tape diagrams</li>
+              <li>• Ahmes & the Rhind Mathematical Papyrus (1650 BC)</li>
+              <li>• Reciprocal inversion invariant: $W \div \frac{a}{b} = W \times \frac{b}{a}$</li>
+              <li>• Craft: Cedar boardwalk joist blocking & shingle courses</li>
+            </ul>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
+            <button onclick="openModal('grade6')" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-river-900 py-2.5 rounded text-xs font-mono uppercase tracking-wider transition">
+              View Plates
+            </button>
+            <a href="downloads/Grade_6_Decad_I_Sample_Folio.pdf" download class="flex-1 text-center bg-river-800 hover:bg-river-900 text-white py-2.5 rounded text-xs font-mono uppercase tracking-wider transition shadow">
+              Download PDF (1.7 MB)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRADE 7 CARD -->
+      <div class="bg-white rounded-lg border border-slate-300 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+        <div class="bg-river-900 text-white p-4 border-b border-river-700 flex justify-between items-center">
+          <div>
+            <span class="text-xs font-mono tracking-widest uppercase text-sky-300">Grade 7 · Decad I</span>
+            <h3 class="font-display text-lg font-bold">Signed Number Operations in $\mathbb{Q}$</h3>
+          </div>
+          <span class="text-xs font-mono bg-river-800 px-2.5 py-1 rounded text-slate-200 border border-river-600">Days 1–10</span>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <!-- Plate Thumbnail -->
+            <div class="relative group cursor-pointer mb-5 overflow-hidden rounded border border-slate-200" onclick="openModal('grade7')">
+              <img src="previews/grade_7_plate1-01.webp" alt="Grade 7 Plate 1" class="w-full h-48 object-cover object-top group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-river-900/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                <span class="bg-white text-river-900 text-xs font-mono px-3 py-1.5 rounded uppercase tracking-wider font-semibold shadow">
+                  Inspect Plate 1 & 2
+                </span>
+              </div>
+            </div>
+
+            <div class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-2">Core Disciplinary Highlights</div>
+            <ul class="text-sm text-slate-600 space-y-1.5 mb-6 font-serif">
+              <li>• Zero pairs, opposite charges & directional vectors</li>
+              <li>• Brahmagupta & directional arithmetic (628 AD)</li>
+              <li>• Dual negation invariant: $(-a)(-b) = +ab$</li>
+              <li>• Craft: Tractor implement ballast & elevation datums</li>
+            </ul>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
+            <button onclick="openModal('grade7')" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-river-900 py-2.5 rounded text-xs font-mono uppercase tracking-wider transition">
+              View Plates
+            </button>
+            <a href="downloads/Grade_7_Decad_I_Sample_Folio.pdf" download class="flex-1 text-center bg-river-800 hover:bg-river-900 text-white py-2.5 rounded text-xs font-mono uppercase tracking-wider transition shadow">
+              Download PDF (1.8 MB)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRADE 8 CARD -->
+      <div class="bg-white rounded-lg border border-slate-300 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+        <div class="bg-river-900 text-white p-4 border-b border-river-700 flex justify-between items-center">
+          <div>
+            <span class="text-xs font-mono tracking-widest uppercase text-sky-300">Grade 8 · Decad I</span>
+            <h3 class="font-display text-lg font-bold">Linear Functions & Rate of Change</h3>
+          </div>
+          <span class="text-xs font-mono bg-river-800 px-2.5 py-1 rounded text-slate-200 border border-river-600">Days 1–10</span>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <!-- Plate Thumbnail -->
+            <div class="relative group cursor-pointer mb-5 overflow-hidden rounded border border-slate-200" onclick="openModal('grade8')">
+              <img src="previews/grade_8_plate1-01.webp" alt="Grade 8 Plate 1" class="w-full h-48 object-cover object-top group-hover:scale-105 transition duration-300">
+              <div class="absolute inset-0 bg-river-900/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                <span class="bg-white text-river-900 text-xs font-mono px-3 py-1.5 rounded uppercase tracking-wider font-semibold shadow">
+                  Inspect Plate 1 & 2
+                </span>
+              </div>
+            </div>
+
+            <div class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-2">Core Disciplinary Highlights</div>
+            <ul class="text-sm text-slate-600 space-y-1.5 mb-6 font-serif">
+              <li>• Transition from direct proportions ($y=kx$) to affine maps</li>
+              <li>• Nicole Oresme & coordinate velocity (1360 AD)</li>
+              <li>• Vertical translation vector $\vec{T} = \langle 0, b \rangle$: $y = mx + b$</li>
+              <li>• Craft: Coastal vessel auxiliary day-tank fuel calibration</li>
+            </ul>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
+            <button onclick="openModal('grade8')" class="flex-1 text-center bg-slate-100 hover:bg-slate-200 text-river-900 py-2.5 rounded text-xs font-mono uppercase tracking-wider transition">
+              View Plates
+            </button>
+            <a href="downloads/Grade_8_Decad_I_Sample_Folio.pdf" download class="flex-1 text-center bg-river-800 hover:bg-river-900 text-white py-2.5 rounded text-xs font-mono uppercase tracking-wider transition shadow">
+              Download PDF (1.9 MB)
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 30-DECAD COMPREHENSIVE ROADMAP OVERVIEW -->
+  <section id="roadmap" class="py-16 bg-slate-100 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <p class="font-mono text-xs uppercase tracking-widest text-river-600 font-semibold mb-2">Full Curricular Horizon</p>
+        <h2 class="font-display text-3xl sm:text-4xl text-river-900">The 30-Decad River Basin</h2>
+        <p class="text-slate-600 mt-2 text-base font-serif">
+          A continuous, coherent mathematical sequence spanning three middle school years (300 instructional plates).
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Grade 6 Decads -->
+        <div class="bg-white p-5 rounded border border-slate-200">
+          <div class="font-display font-bold text-lg text-river-900 border-b border-slate-200 pb-2 mb-3">
+            Grade 6 (Days 1–100)
+          </div>
+          <ol class="text-xs font-mono space-y-2 text-slate-700">
+            <li><span class="text-river-600 font-semibold">I.</span> Fraction Division & Reciprocity</li>
+            <li><span class="text-river-600 font-semibold">II.</span> Factors, Multiples & Primes</li>
+            <li><span class="text-river-600 font-semibold">III.</span> Decimal Algorithms & Modulo</li>
+            <li><span class="text-river-600 font-semibold">IV.</span> Ratios & Equated Tables</li>
+            <li><span class="text-river-600 font-semibold">V.</span> Unit Rates & Percent Proportions</li>
+            <li><span class="text-river-600 font-semibold">VI.</span> Algebraic Expressions & Syntax</li>
+            <li><span class="text-river-600 font-semibold">VII.</span> One-Step Balance Equations</li>
+            <li><span class="text-river-600 font-semibold">VIII.</span> Signed Numbers & Inequalities</li>
+            <li><span class="text-river-600 font-semibold">IX.</span> The Cartesian Coordinate Plane</li>
+            <li><span class="text-river-600 font-semibold">X.</span> Planar Area, Nets & Prism Volume</li>
+          </ol>
+        </div>
+
+        <!-- Grade 7 Decads -->
+        <div class="bg-white p-5 rounded border border-slate-200">
+          <div class="font-display font-bold text-lg text-river-900 border-b border-slate-200 pb-2 mb-3">
+            Grade 7 (Days 1–100)
+          </div>
+          <ol class="text-xs font-mono space-y-2 text-slate-700">
+            <li><span class="text-river-600 font-semibold">I.</span> Signed Number Operations in $\mathbb{Q}$</li>
+            <li><span class="text-river-600 font-semibold">II.</span> Proportional Rates & Constant $k$</li>
+            <li><span class="text-river-600 font-semibold">III.</span> Percent Applications & Scaling</li>
+            <li><span class="text-river-600 font-semibold">IV.</span> Multi-Step Equations & Balance</li>
+            <li><span class="text-river-600 font-semibold">V.</span> Linear Inequalities & Bounds</li>
+            <li><span class="text-river-600 font-semibold">VI.</span> Rates with Complex Fractions</li>
+            <li><span class="text-river-600 font-semibold">VII.</span> Proportions & Scale Drawings</li>
+            <li><span class="text-river-600 font-semibold">VIII.</span> Angles, Transversals & Triangles</li>
+            <li><span class="text-river-600 font-semibold">IX.</span> Circles & Constant $\pi$</li>
+            <li><span class="text-river-600 font-semibold">X.</span> Polyhedra, Surface Area & Volume</li>
+          </ol>
+        </div>
+
+        <!-- Grade 8 Decads -->
+        <div class="bg-white p-5 rounded border border-slate-200">
+          <div class="font-display font-bold text-lg text-river-900 border-b border-slate-200 pb-2 mb-3">
+            Grade 8 (Days 1–100)
+          </div>
+          <ol class="text-xs font-mono space-y-2 text-slate-700">
+            <li><span class="text-river-600 font-semibold">I.</span> Linear Functions & Affine Lines</li>
+            <li><span class="text-river-600 font-semibold">II.</span> Solutions & Spatial Intersections</li>
+            <li><span class="text-river-600 font-semibold">III.</span> Integer Exponents & Powers</li>
+            <li><span class="text-river-600 font-semibold">IV.</span> Roots & the Real Continuum</li>
+            <li><span class="text-river-600 font-semibold">V.</span> Rigid Geometric Isometries</li>
+            <li><span class="text-river-600 font-semibold">VI.</span> Dilations & Geometric Similarity</li>
+            <li><span class="text-river-600 font-semibold">VII.</span> Simultaneous Linear Systems</li>
+            <li><span class="text-river-600 font-semibold">VIII.</span> Elimination Systems Modeling</li>
+            <li><span class="text-river-600 font-semibold">IX.</span> The Pythagorean Space Metric</li>
+            <li><span class="text-river-600 font-semibold">X.</span> Curvilinear Volumes & Cavalieri</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUEST FULL ACCESS CALLOUT -->
+  <section id="request-access" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <div class="bg-river-900 text-white rounded-xl p-8 sm:p-12 shadow-xl border border-river-700 text-center relative overflow-hidden">
+      <div class="relative z-10">
+        <p class="font-mono text-xs uppercase tracking-widest text-sky-300 font-semibold mb-2">Complete Curriculum Access</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4">Request the Full 300-Day Master Folios</h2>
+        <p class="text-slate-300 text-base sm:text-lg font-serif max-w-2xl mx-auto leading-relaxed mb-8">
+          The complete master curriculum—including all 300 daily broadsheets, semester volumes (Days 1–50 and 51–100), and full LaTeX/TikZ source code archives—is hosted in a private Google Drive repository for educators, classical schools, and curriculum directors.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="mailto:thecorcoran@gmail.com?subject=Curriculum%20of%20the%20River%20-%20Full%20Curriculum%20Access%20Request&body=Hello%20Jonathan,%0A%0AI%20reviewed%20the%20sample%20decads%20for%20The%20Curriculum%20of%20the%20River%20and%20would%20like%20to%20request%20access%20to%20the%20complete%20Google%20Drive%20folder.%0A%0AName:%20%0ARole%20/%20Organization:%20%0AIntended%20Use%20(Classroom,%20Homeschool,%20Independent):%20%0A%0AThank%20you!"
+             class="w-full sm:w-auto bg-timber-500 hover:bg-timber-600 text-white font-sans font-medium px-8 py-3.5 rounded shadow-lg transition">
+            Request Full Folder Access via Email
+          </a>
+          <button onclick="copyEmail()" class="w-full sm:w-auto bg-river-800 hover:bg-river-700 text-slate-200 border border-river-600 font-mono text-xs px-5 py-3.5 rounded transition" id="copy-btn">
+            Copy: thecorcoran@gmail.com
+          </button>
+        </div>
+        <p class="text-xs font-mono text-slate-400 mt-4">Direct personal reply with the Google Drive master folder link.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-10 px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-7xl mx-auto space-y-2">
+      <p class="font-display font-bold text-sm text-river-900 tracking-wider">The Curriculum of the River</p>
+      <p>Published & Grounded at Homestead Metrology · Olympia, Washington</p>
+      <p class="text-slate-400">Palatino / MathPazo · TikZ Vector Illustrations · Single-Plate Broadside Architecture</p>
+    </div>
+  </footer>
+
+  <!-- MODAL VIEWER FOR BROADSHEET INSPECTION -->
+  <div id="plate-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-2 sm:p-4">
+    <div class="bg-white w-full max-w-6xl rounded-lg shadow-2xl overflow-hidden flex flex-col max-h-[95vh]">
+      <!-- Modal Header -->
+      <div class="bg-river-900 text-white px-6 py-4 flex justify-between items-center border-b border-river-700">
+        <div>
+          <span id="modal-tag" class="text-xs font-mono tracking-widest text-sky-300 uppercase">Grade Showcase</span>
+          <h3 id="modal-title" class="font-display text-lg sm:text-xl font-bold">Plate Inspector</h3>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-white text-2xl font-mono leading-none">&times;</button>
+      </div>
+
+      <!-- Plate Tabs -->
+      <div class="bg-slate-100 px-6 py-2 border-b border-slate-200 flex gap-2">
+        <button id="tab-p1" onclick="switchPlate(1)" class="px-4 py-1.5 rounded text-xs font-mono uppercase tracking-wider bg-river-800 text-white font-medium shadow-sm">
+          Plate 1 (Anchor Demonstration)
+        </button>
+        <button id="tab-p2" onclick="switchPlate(2)" class="px-4 py-1.5 rounded text-xs font-mono uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 font-medium">
+          Plate 2 (Sequential Development)
+        </button>
+      </div>
+
+      <!-- Image Viewer -->
+      <div class="flex-1 overflow-auto p-4 bg-slate-200 flex items-center justify-center">
+        <img id="modal-img" src="" alt="Broadsheet Plate Preview" class="max-w-full max-h-[70vh] object-contain shadow-md rounded border border-slate-300 bg-white">
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-white px-6 py-3 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="text-xs text-slate-500 font-serif italic" id="modal-caption">
+          Master 17" × 11" Broadsheet with panoramic demonstration, 5-problem ladder, and classical disciplinary codex.
+        </p>
+        <a id="modal-download" href="" download class="bg-river-800 hover:bg-river-900 text-white text-xs font-mono uppercase tracking-wider px-5 py-2 rounded transition shadow">
+          Download Full 10-Day Decad PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT FOR MODAL & INTERACTION -->
+  <script>
+    let currentGrade = 'grade6';
+    let currentPlate = 1;
+
+    const gradeData = {
+      grade6: {
+        tag: 'Grade 6 · Decad I (Days 1–10)',
+        title: 'Fraction Division & Reciprocity',
+        p1: 'previews/grade_6_plate1-01.webp',
+        p2: 'previews/grade_6_plate2-02.webp',
+        pdf: 'downloads/Grade_6_Decad_I_Sample_Folio.pdf'
+      },
+      grade7: {
+        tag: 'Grade 7 · Decad I (Days 1–10)',
+        title: 'Signed Number Operations in Q',
+        p1: 'previews/grade_7_plate1-01.webp',
+        p2: 'previews/grade_7_plate2-02.webp',
+        pdf: 'downloads/Grade_7_Decad_I_Sample_Folio.pdf'
+      },
+      grade8: {
+        tag: 'Grade 8 · Decad I (Days 1–10)',
+        title: 'Linear Functions & Rate of Change',
+        p1: 'previews/grade_8_plate1-01.webp',
+        p2: 'previews/grade_8_plate2-02.webp',
+        pdf: 'downloads/Grade_8_Decad_I_Sample_Folio.pdf'
+      }
+    };
+
+    function openModal(grade) {
+      currentGrade = grade;
+      currentPlate = 1;
+      updateModalView();
+      document.getElementById('plate-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('plate-modal').classList.add('hidden');
+    }
+
+    function switchPlate(plateNum) {
+      currentPlate = plateNum;
+      updateModalView();
+    }
+
+    function updateModalView() {
+      const data = gradeData[currentGrade];
+      document.getElementById('modal-tag').textContent = data.tag;
+      document.getElementById('modal-title').textContent = data.title;
+      document.getElementById('modal-img').src = currentPlate === 1 ? data.p1 : data.p2;
+      document.getElementById('modal-download').href = data.pdf;
+
+      // Update tab styles
+      const tab1 = document.getElementById('tab-p1');
+      const tab2 = document.getElementById('tab-p2');
+      if (currentPlate === 1) {
+        tab1.className = 'px-4 py-1.5 rounded text-xs font-mono uppercase tracking-wider bg-river-800 text-white font-medium shadow-sm';
+        tab2.className = 'px-4 py-1.5 rounded text-xs font-mono uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 font-medium';
+      } else {
+        tab1.className = 'px-4 py-1.5 rounded text-xs font-mono uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 font-medium';
+        tab2.className = 'px-4 py-1.5 rounded text-xs font-mono uppercase tracking-wider bg-river-800 text-white font-medium shadow-sm';
+      }
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText('thecorcoran@gmail.com').then(() => {
+        const btn = document.getElementById('copy-btn');
+        const orig = btn.textContent;
+        btn.textContent = 'Copied to Clipboard!';
+        btn.classList.add('bg-emerald-700', 'text-white');
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.classList.remove('bg-emerald-700', 'text-white');
+        }, 2000);
+      });
+    }
+
+    // Close on escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
