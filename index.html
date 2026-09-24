@@ -61,6 +61,11 @@
       height: 1px;
     }
   </style>
+  <!-- KaTeX for Publication-Grade Mathematical Typography -->
+  <link rel=stylesheet href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="renderMathInElement(document.body, {delimiters: [{left: '$', right: '$', display: false}]});"></script>
+
 </head>
 <body class="selection:bg-river-100 selection:text-river-900">
 
@@ -164,7 +169,7 @@
       <!-- CHARTER PREVIEW & ACTIONS -->
       <div class="mt-10 pt-8 border-t border-borderParchment flex flex-col sm:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-4">
-          <div class="w-16 h-20 bg-slate-100 rounded border border-slate-300 overflow-hidden shadow-sm flex-shrink-0 cursor-pointer" onclick="openLightbox('charter')">
+          <div class="w-28 sm:w-36 aspect-[17/11] bg-slate-100 rounded border border-slate-300 overflow-hidden shadow-sm flex-shrink-0 cursor-pointer" onclick="openLightbox('charter')">
             <img src="previews/charter_plate-1.webp" alt="Charter Thumbnail" class="w-full h-full object-cover object-top hover:opacity-90 transition">
           </div>
           <div>
@@ -411,9 +416,14 @@
         <p class="text-xs text-slate-500 italic font-serif">
           Each lesson folio is an architectural landscape sheet containing demonstration, progressive practice, and historical codex.
         </p>
-        <a id="modal-download-btn" href="" download class="font-sans text-xs uppercase tracking-wider bg-river-900 hover:bg-river-800 text-white px-5 py-2 rounded-full transition shadow font-medium">
-          Download PDF
-        </a>
+        <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <a id="modal-view-full-btn" href="#" target="_blank" class="font-sans text-xs uppercase tracking-wider bg-white hover:bg-cream text-river-900 border border-slate-300 px-4 py-2 rounded-full transition font-medium text-center shadow-sm">
+            Open High-Res ↗
+          </a>
+          <a id="modal-download-btn" href="#" download class="font-sans text-xs uppercase tracking-wider bg-river-900 hover:bg-river-800 text-white px-5 py-2 rounded-full transition shadow font-medium text-center">
+            Download PDF
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -440,7 +450,7 @@
       },
       grade7: {
         tag: 'Grade 7 · Decad I',
-        title: 'Signed Number Operations in Q: Directional Equilibrium (Plate 1 & 2)',
+        title: 'Signed Number Operations in $\mathbb{Q}$: Directional Equilibrium (Plate 1 & 2)',
         p1: 'previews/grade_7_plate1-01.webp',
         p2: 'previews/grade_7_plate2-02.webp',
         download: 'downloads/Grade_7_Decad_I_Sample_Folio.pdf'
@@ -473,8 +483,13 @@
     function renderLightbox() {
       const data = folios[activeKey];
       document.getElementById('modal-tag').textContent = data.tag;
-      document.getElementById('modal-title').textContent = data.title;
+      document.getElementById('modal-title').innerHTML = data.title;
+      if (window.renderMathInElement) {
+        renderMathInElement(document.getElementById('modal-title'), {delimiters: [{left: '$', right: '$', display: false}]});
+      }
       document.getElementById('modal-download-btn').href = data.download;
+      const curImg = (!data.p2 || activePlate === 1) ? data.p1 : data.p2;
+      document.getElementById('modal-view-full-btn').href = curImg;
 
       const tabsContainer = document.getElementById('modal-tabs');
       if (!data.p2) {
